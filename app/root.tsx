@@ -12,6 +12,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", to: "https://fonts.googleapis.com" },
@@ -170,6 +171,7 @@ export default function App() {
       </div>
       <Navbar />
       <Outlet />;
+      <Footer/>
     </>
   );
 }
